@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="MediatR" Version="7.0.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
+    
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ChoreMonitor.Infrastructure\ChoreMonitor.Infrastructure.csproj" />
+    <ProjectReference Include="..\ChoreMonitor.Data\ChoreMonitor.Data.csproj" />
+    <ProjectReference Include="..\ChoreMonitor.Features.Chores\ChoreMonitor.Features.Chores.csproj" />
+    <ProjectReference Include="..\ChoreMonitor.Features.Registrations\ChoreMonitor.Features.Registrations.csproj" />
+    <ProjectReference Include="..\ChoreMonitor.Features.Users\ChoreMonitor.Features.Users.csproj" />
+  </ItemGroup>
+
+</Project>

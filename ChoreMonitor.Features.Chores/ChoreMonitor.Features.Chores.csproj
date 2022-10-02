@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="8.5.0" />
+    <PackageReference Include="MediatR" Version="7.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ChoreMonitor.Infrastructure\ChoreMonitor.Infrastructure.csproj" />
+    <ProjectReference Include="..\ChoreMonitor.Data\ChoreMonitor.Data.csproj" />
+    <ProjectReference Include="..\ChoreMonitor.Entities\ChoreMonitor.Entities.csproj" />
+  </ItemGroup>
+
+</Project>
